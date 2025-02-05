@@ -1,1 +1,160 @@
+body{
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url(images/bg.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
 
+/* navbar section */
+
+nav{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100vw;
+  height: 10vh;
+  background-color:lightseagreen;
+  
+}
+
+nav ul{
+  display: flex;
+  
+  
+}
+
+nav li{
+  margin-right: 30px;
+  list-style: none;
+  align-items: flex-end;
+  
+}
+
+nav a{
+  color: white;
+  text-decoration: none;
+  font-family: verdana;
+  transition: border 0.3s ease, color 0.3s ease;
+  font-weight: 600;
+}
+
+nav a:hover{
+  border:1px solid #ffffff;
+  color: #eefe0b; /* Golden color on hover */
+}
+
+
+/* hi section */
+
+.hi{
+  color: white;
+  background-color:lightseagreen;
+  width: 60vw;
+  margin: 100px auto;
+  padding: 5%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  
+}
+
+.hi h1{
+  color: #0e0d0c;
+}
+
+.hi button{
+  height: 30px;
+  background-color:crimson;
+  color: white;
+  font-family: sans-serif;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+/* about section */
+
+.about{
+  color: white;
+  background-color:lightseagreen;
+  width: 60vw;
+  margin: 100px auto;
+  padding: 5%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  
+}
+
+.about h2{
+  color: #000000;
+}
+
+/* services section */
+
+.services{
+  color: white;
+  background-color: lightseagreen;
+  width: 60vw;
+  margin: 100px auto;
+  padding: 3%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  
+}
+
+.services h2{
+  color:crimson;
+}
+/* cta section */
+
+.cta{
+  color: rgb(255, 226, 5);
+  background-color: lightseagreen;
+  width: 60vw;
+  margin: 100px auto;
+  padding: 3%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  
+}
+
+.cta button{
+  height: 30px;
+  background-color:crimson;
+  color: white;
+  font-family: sans-serif;
+  cursor: pointer;
+}
+
+/* footer section */
+
+footer{
+  height: 10vh;
+  width: 100vw;
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer ul{
+  display: flex;
+}
+
+footer li{
+  list-style: none;
+  
+}
+
+footer a{
+  text-decoration: none;
+  color: white;
+  margin-left: 50px;
+
+}
