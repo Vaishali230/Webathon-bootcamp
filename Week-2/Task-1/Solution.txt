@@ -1,1 +1,202 @@
+(5).  Explain the difference between null and undefined in JavaScript.
+Soln:-  JavaScript, null and undefined are two primitive values that are often confused with each other.
+ While they may seem similar, they have distinct meanings and uses.
 
+# Null
+ null is a primitive value that represents the absence of any object value.
+ It is a deliberate assignment of "no value" to a variable. 
+ Think of it as a empty container that has been explicitly declared as empty.
+
+Example:
+
+let foo = null;
+console.log(foo); // Output: null
+
+
+# Undefined
+undefined is a primitive value that represents an uninitialized or non-existent variable. 
+It is the default value of a variable that has been declared but not assigned a value. 
+Think of it as an empty container that has not been initialized.
+
+Example:
+
+let foo;
+console.log(foo); // Output: undefined
+
+
+
+
+
+
+
+(6).  What is the difference between var, let, and const in JavaScript?
+Soln:-
+        # Var
+          - Function scope
+          - Can be redeclared and updated
+          - Hoisted to the top of its scope
+
+        # Let
+          - Block scope
+          - Can be updated, but not redeclared
+          - Hoisted to the top of its scope, but not initialized until assigned
+
+        # Const
+          - Block scope
+          - Cannot be updated or redeclared
+          - Must be assigned a value at declaration
+
+    Example:
+     var x = 10;
+     var x = 20; // allowed
+
+     let y = 10;
+     let y = 20; // error
+
+     const z = 10;
+     const z = 20; // error
+     z = 20; // error
+
+
+
+
+
+
+
+(7).  What is a callback function, and why is it important in JavaScript?
+Soln:-Callback functions are crucial in JavaScript because they enable the language to handle asynchronous operations efficiently. 
+Here are some reasons why callback functions are important in JavaScript:
+
+# Asynchronous Programming
+JavaScript is an asynchronous language, meaning it can execute multiple tasks simultaneously. 
+Callback functions allow JavaScript to handle asynchronous operations, such as network requests, database queries, or timer events.
+
+# Non-Blocking Code
+Callback functions enable non-blocking code, which means that the code execution is not paused while waiting for an asynchronous operation to complete. 
+Instead, the callback function is executed when the operation is complete, allowing the code to continue executing without interruption.
+
+# Event-Driven Programming
+Callback functions are essential for event-driven programming in JavaScript. 
+They allow developers to respond to user interactions, such as mouse clicks, keyboard input, or page loads.
+
+# Modular Code
+Callback functions promote modular code by allowing developers to break down complex tasks into smaller, reusable functions. 
+This makes the code more maintainable, efficient, and scalable.
+
+# Error Handling
+Callback functions can be used to handle errors that occur during asynchronous operations. 
+By passing an error callback function, developers can catch and handle errors more effectively.
+
+
+
+
+
+
+
+(8).  How many loops in JavaScript, and how do they work?
+Soln:-In JavaScript, there are several types of loops that allow you to execute a block of code repeatedly. Here are the most common types of loops in JavaScript:
+
+# a. For loop
+The for loop is used when you know in advance how many times the script should run. 
+
+Syntax:
+for (var=startvalue;var<=endvalue;var=var+increment) 
+{ 
+ code to be executed 
+} 
+
+
+Example:
+for (let i = 0; i < 5; i++) {
+  console.log(i);
+}
+
+
+# b. While Loop
+The while loop is used when you want the loop to execute and continue executing while the 
+specified 
+condition is true. 
+
+Syntax:
+while (var<=endvalue) 
+{ 
+ code to be executed 
+} 
+
+Example:
+let i = 0;
+while (i < 5) {
+  console.log(i);
+  i++;
+}
+
+
+# c. Do-While Loop
+The do...while loop is a variant of the while loop. This loop will always execute a block of code 
+ONCE, and then it will repeat the loop as long as the specified condition is true. This loop will 
+always be executed at least once, even if the condition is false, because the code is executed 
+before the condition is tested.
+
+Syntax:
+do 
+{ 
+ code to be executed 
+} 
+while (var<=endvalue);
+
+Example:
+let i = 0;
+do {
+  console.log(i);
+  i++;
+} while (i < 5);
+
+
+
+
+
+
+(14).	What are functions in JavaScript, and how do you declare them?
+Soln:-In JavaScript, a function is a block of code that can be executed multiple times from different parts of your program.
+ Functions are useful for performing repetitive tasks, and they help to make your code more organized, reusable, and maintainable.
+
+# Types of Functions in JavaScript
+There are several types of functions in JavaScript:
+
+   a. Function Declaration: A function declaration is a statement that defines a function.
+   b. Function Expression: A function expression is an expression that defines a function.
+   c. Arrow Function: An arrow function is a concise way to define a function.
+   d. Method: A method is a function that is a property of an object.
+
+# Declaring Functions in JavaScript
+Here are the different ways to declare functions in JavaScript:
+
+   a. Function Declaration
+
+   function greet(name) {
+     console.log(`Hello, ${name}!`);
+    }
+
+
+    b. Function Expression
+
+    const greet = function(name) {
+      console.log(`Hello, ${name}!`);
+    };
+
+
+    c. Arrow Function
+
+    const greet = (name) => {
+    console.log(`Hello, ${name}!`);
+    };
+
+
+    d. Method
+
+    const person = {
+    name: 'John',
+    greet: function() {
+       console.log(`Hello, my name is ${this.name}!`);
+     }
+    };
